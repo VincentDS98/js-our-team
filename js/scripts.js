@@ -50,3 +50,24 @@ console.log('oureTeam',ourTeam,typeof ourTeam);
 for(let i = 0; i < ourTeam.length;i++){
     console.log(ourTeam[i].name,ourTeam[i].role,ourTeam[i].image);
 }
+
+const ourteamlist = document.getElementById('our-team-list');
+for(let i = 0 ; i< ourTeam.length;i++){
+ourteamlist.innerHTML += `
+<li>
+    <h2>
+        ${ourTeam[i].name}
+    </h2>
+
+    <h3>
+        ${ourTeam[i].role}
+    </h3>
+
+    <h4>
+        ${ourTeam[i].image}  
+    </h4>
+
+</li>
+
+`;
+}
